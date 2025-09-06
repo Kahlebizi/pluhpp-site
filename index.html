@@ -6,6 +6,7 @@
 <title>Pluh++</title>
 
 <style>
+/* CSS do site */
 body { font-family: Arial; background:#0f0f0f; color:#f0f0f0; margin:0; padding:0; }
 header { text-align:center; background:#222; padding:20px; }
 header h1 { color:#4af; font-size:2.5em; }
@@ -14,6 +15,7 @@ nav button:hover { background:#4af; }
 main { padding:20px; }
 pre { background:#111; padding:10px; border-radius:5px; overflow-x:auto; }
 footer { text-align:center; padding:10px; background:#222; }
+/* Acordeão do tutorial */
 .accordion-btn { background:#333; color:#fff; cursor:pointer; padding:10px; width:100%; border:none; text-align:left; outline:none; margin-top:5px; }
 .accordion-btn:hover { background:#4af; }
 .panel { padding:0 15px; display:none; background:#111; overflow:hidden; }
@@ -38,6 +40,7 @@ ul { padding-left:20px; }
 
 <main>
 
+<!-- História -->
 <section id="historia" class="aba">
   <h2>📜 História / Criador</h2>
   <p>
@@ -48,6 +51,7 @@ ul { padding-left:20px; }
   <p>Ela nasceu da vontade de ter algo mais poderoso que ASB, mas ainda simples de usar.</p>
 </section>
 
+<!-- Como Funciona -->
 <section id="funciona" class="aba" style="display:none">
   <h2>⚡ Como Funciona</h2>
   <p>Pluh++ é interpretada, mas também pode ser compilada. Possui módulos como <code>pluh.game</code>, <code>ct.Console</code> e <code>timer</code>.</p>
@@ -61,6 +65,7 @@ ul { padding-left:20px; }
   </ul>
 </section>
 
+<!-- Mini Interpretador -->
 <section id="interpretador" class="aba" style="display:none">
   <h2>🖥 Mini Interpretador</h2>
   <p>Exemplo de código que roda no interpretador:</p>
@@ -76,6 +81,7 @@ print("Array atual: " table)
   <p>O interpretador lê linha a linha e executa os comandos do Pluh++.</p>
 </section>
 
+<!-- Comandos -->
 <section id="comandos" class="aba" style="display:none">
   <h2>📦 Comandos de Pluh++</h2>
   
@@ -135,6 +141,7 @@ loop.while[condição]
   </pre>
 </section>
 
+<!-- Super Tutorial -->
 <section id="tutorial" class="aba" style="display:none">
   <h2>🎓 Super Tutorial Pluh++</h2>
   <div class="accordion">
@@ -183,7 +190,7 @@ loop.while[x < 10]
     </div>
   </div>
 
-     <p style="margin-top:20px;">📥 Para o **Mega Tutorial completo**, clique <a href="extensao.html"_blank">aqui</a> para abrir a extensão externa.</p>
+  <p style="margin-top:20px;">📥 Para o **Mega Tutorial completo**, clique <a href="extentensao.html" target="_blank">aqui</a> para abrir a extensão externa.</p>
 </section>
 
 </main>
@@ -193,11 +200,13 @@ loop.while[x < 10]
 </footer>
 
 <script>
+// Funções JS
 function abrirAba(nome) {
   document.querySelectorAll('.aba').forEach(a => a.style.display='none');
   document.getElementById(nome).style.display='block';
 }
 
+// Acordeão
 document.querySelectorAll(".accordion-btn").forEach(btn => {
   btn.addEventListener("click", () => {
     const panel = btn.nextElementSibling;
