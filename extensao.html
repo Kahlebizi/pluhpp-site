@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pluh++ Mega Tutorial Ultimate</title>
+
+<style>
+body { font-family: Arial; background:#0f0f0f; color:#f0f0f0; margin:0; padding:0; line-height:1.6; }
+header { text-align:center; background:#222; padding:20px; }
+header h1 { color:#4af; font-size:2.5em; }
+nav button { margin:5px; padding:8px 15px; border:none; background:#333; color:#fff; border-radius:5px; cursor:pointer; }
+nav button:hover { background:#4af; }
+main { padding:20px; max-width:900px; margin:auto; }
+pre { background:#111; padding:10px; border-radius:5px; overflow-x:auto; font-size:0.9em; }
+footer { text-align:center; padding:10px; background:#222; }
+h2, h3 { color:#4af; margin-top:30px; }
+ul { padding-left:20px; }
+.accordion-btn { background:#333; color:#fff; cursor:pointer; padding:10px; width:100%; border:none; text-align:left; outline:none; margin-top:5px; font-size:1em; }
+.accordion-btn:hover { background:#4af; }
+.panel { padding:0 15px; display:none; background:#111; overflow:hidden; }
+.code-ex { color:#4af; background:#222; display:inline-block; padding:2px 5px; border-radius:3px; font-family:monospace; }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>🚀 Pluh++ Mega Tutorial Ultimate</h1>
+  <p>Aprenda Pluh++ rindo, testando e ficando mais poderoso que PythonU 💥</p>
+</header>
+
+<main>
+
+<section>
+  <div class="accordion">
+
+    <!-- Instalação -->
+    <button class="accordion-btn">1️⃣ Instalando Pluh++</button>
+    <div class="panel">
+      <p>Primeiro de tudo, sem Pluh++ não rola diversão, blud 😎. Então instala:</p>
+      <pre>pip install pluhpp</pre>
+      <p>📱 No celular? Use <strong>Pydroid 3</strong> ou <strong>Replit</strong>. Depois tu tá pronto pra detonar!</p>
+    </div>
+
+    <!-- Variáveis -->
+    <button class="accordion-btn">2️⃣ Variáveis - Guardando o caos</button>
+    <div class="panel">
+      <p>Variáveis são tipo caixas de mangos mangos 🍑, tu coloca algo dentro e usa depois.</p>
+      <pre>
+var x = 10          # x agora vale 10
+var nome = "Kalleb"  # guardando o nome do chefão
+print("Oi " nome)    # imprime: Oi Kalleb
+      </pre>
+      <p>Dica de mestre: nomes de variáveis não podem ter espaços, mas podem ter underscores. Tipo <code>var minha_var = 42</code>.</p>
+    </div>
+
+    <!-- Loops -->
+    <button class="accordion-btn">3️⃣ Loops - Repetição sem preguiça</button>
+    <div class="panel">
+      <p>Loops são usados pra repetir código sem ficar copiando. Tipo, repetir "Poyo" 100x 🌀</p>
+      <pre>
+loop var[print("Iteração")] : 5 and [print("Oi blud")]
+loop.while[x < 10]
+  print(x)
+  x = x + 1
+      </pre>
+      <p>💡 <strong>break</strong> sai do loop antes de terminar, <strong>continue</strong> pula pra próxima iteração.</p>
+    </div>
+
+    <!-- Condições -->
+    <button class="accordion-btn">4️⃣ Condições - Escolhas de vida</button>
+    <div class="panel">
+      <pre>
+if[x > 5]
+  print("X é maior que 5")
+elseif[x == 5]
+  print("X é igual a 5")
+else
+  print("X é menor que 5")
+      </pre>
+      <p>Se tu não entende <code>if/elseif/else</code>, pensa assim: "Se rolar algo, faz isso, senão, tenta isso, senão, faz o resto". Fácil, blud 😏</p>
+    </div>
+
+    <!-- Funções -->
+    <button class="accordion-btn">5️⃣ Funções - Magia encapsulada</button>
+    <div class="panel">
+      <p>Funções são como poções mágicas: tu chama quando precisa.</p>
+      <pre>
+var function(print("Olá Mundo")) = funcaoHello
+call[funcaoHello]
+
+var function(var a, var b):
+  print("Soma:" a + b)
+call[funcaoSoma](10,20)
+      </pre>
+      <p>Dica: sempre usa nomes de funções claros ou depois tu esquece 😅</p>
+    </div>
+
+    <!-- Arrays e Strings -->
+    <button class="accordion-btn">6️⃣ Arrays & Strings - Listas e textos</button>
+    <div class="panel">
+      <pre>
+table = ["mango","apple","banana"]
+table.append("orange")   # adiciona
+table.remove(1)          # remove "apple"
+print(table)
+
+string.upper("teste")    # "TESTE"
+string.lower("TESTE")    # "teste"
+string.concat("Oi ","blud")  # "Oi blud"
+      </pre>
+      <p>Arrays = listas de itens, Strings = textos, tudo manipulável e divertido 😎</p>
+    </div>
+
+    <!-- Operadores -->
+    <button class="accordion-btn">7️⃣ Operadores - Matemágica</button>
+    <div class="panel">
+      <pre>
++ - * / % ^        # soma, subtração, multiplicação, divisão, módulo, potência
+random.number(1,100)
+random.range(10,50)
+random.array(["a","b","c"])
+random.color        # retorna cor aleatória
+      </pre>
+      <p>Use random pra dar caos ao código, tipo sortear quem come o último pão de queijo 🫠</p>
+    </div>
+
+    <!-- Comandos avançados -->
+    <button class="accordion-btn">8️⃣ Comandos Avançados - Chefão modo ON</button>
+    <div class="panel">
+      <pre>
+wait(2)                      # pausa 2 segundos
+timer.start("cronometro",10) # inicia timer
+timer.stop("cronometro")      # para timer
+loop.while[x < 10]
+  print(x)
+  x = x + 1
+      </pre>
+      <p>Esses comandos são úteis pra jogos, mini projetos ou scripts mais complexos. Se prepara, blud 😏</p>
+    </div>
+
+    <!-- Mini Projetos -->
+    <button class="accordion-btn">9️⃣ Mini Projetos - Mão na massa</button>
+    <div class="panel">
+      <p>Exemplo 1: Contador simples</p>
+      <pre>
+var count = 0
+loop.while[count < 5]
+  print("Contagem:" count)
+  count = count + 1
+      </pre>
+
+      <p>Exemplo 2: Array aleatório</p>
+      <pre>
+table = ["mango","banana","apple"]
+print("Escolhido:" random.array(table))
+      </pre>
+      <p>Olha, blud, já dá pra se divertir só com isso 😏</p>
+    </div>
+
+    <!-- Mini Interpretador -->
+    <button class="accordion-btn">🔟 Mini Interpretador Interativo</button>
+    <div class="panel">
+      <p>Tu pode testar comandos diretamente:</p>
+      <pre>
+input
+print("Você digitou:" input)
+      </pre>
+      <p>Tipo terminalzinho próprio dentro do Pluh++, só cuidado pra não digitar "explode()" sem querer 💥</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Feito por Kalleb com ❤️ - Voltar ao <a href="index.html">site principal</a></p>
+</footer>
+
+<script>
+// Acordeão JS
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const panel = btn.nextElementSibling;
+    panel.style.display = (panel.style.display === "block") ? "none" : "block";
+  });
+});
+console.log("Mega Tutorial Ultimate Pluh++ rodando mangos mangos 🚀");
+</script>
+
+</body>
+</html>

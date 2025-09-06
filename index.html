@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pluh++</title>
+
+<style>
+body { font-family: Arial; background:#0f0f0f; color:#f0f0f0; margin:0; padding:0; }
+header { text-align:center; background:#222; padding:20px; }
+header h1 { color:#4af; font-size:2.5em; }
+nav button { margin:5px; padding:8px 15px; border:none; background:#333; color:#fff; border-radius:5px; cursor:pointer; }
+nav button:hover { background:#4af; }
+main { padding:20px; }
+pre { background:#111; padding:10px; border-radius:5px; overflow-x:auto; }
+footer { text-align:center; padding:10px; background:#222; }
+.accordion-btn { background:#333; color:#fff; cursor:pointer; padding:10px; width:100%; border:none; text-align:left; outline:none; margin-top:5px; }
+.accordion-btn:hover { background:#4af; }
+.panel { padding:0 15px; display:none; background:#111; overflow:hidden; }
+h2 { color:#4af; }
+ul { padding-left:20px; }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>🚀 Pluh++</h1>
+  <p>Linguagem caótica e poderosa criada por Kalleb</p>
+  <nav>
+    <button onclick="abrirAba('historia')">História</button>
+    <button onclick="abrirAba('funciona')">Como Funciona</button>
+    <button onclick="abrirAba('interpretador')">Mini Interpretador</button>
+    <button onclick="abrirAba('comandos')">Comandos</button>
+    <button onclick="abrirAba('tutorial')">Super Tutorial</button>
+  </nav>
+</header>
+
+<main>
+
+<section id="historia" class="aba">
+  <h2>📜 História / Criador</h2>
+  <p>
+    Pluh++ foi criado por Kalleb para ser uma linguagem **multiuso, caótica e divertida**.
+    Inspirada em Python, ASB e LuaU, ela mistura lógica com criatividade,
+    permitindo criar jogos, scripts, IAs e muito mais!
+  </p>
+  <p>Ela nasceu da vontade de ter algo mais poderoso que ASB, mas ainda simples de usar.</p>
+</section>
+
+<section id="funciona" class="aba" style="display:none">
+  <h2>⚡ Como Funciona</h2>
+  <p>Pluh++ é interpretada, mas também pode ser compilada. Possui módulos como <code>pluh.game</code>, <code>ct.Console</code> e <code>timer</code>.</p>
+  <p>Permite criar:</p>
+  <ul>
+    <li>Variáveis e funções</li>
+    <li>Loops e condições</li>
+    <li>Arrays e manipulação de strings</li>
+    <li>Entrada e saída de dados</li>
+    <li>Controle de tempo e eventos</li>
+  </ul>
+</section>
+
+<section id="interpretador" class="aba" style="display:none">
+  <h2>🖥 Mini Interpretador</h2>
+  <p>Exemplo de código que roda no interpretador:</p>
+  <pre>
+var x = 10
+var y = 20
+loop var[print(x)] : 5 and [print("Iteração")]
+think() + respond(): Hello World
+table = ["mango","apple","banana"]
+table.append("orange")
+print("Array atual: " table)
+  </pre>
+  <p>O interpretador lê linha a linha e executa os comandos do Pluh++.</p>
+</section>
+
+<section id="comandos" class="aba" style="display:none">
+  <h2>📦 Comandos de Pluh++</h2>
+  
+  <h3>Variáveis e Estruturas</h3>
+  <pre>
+var nome = valor
+var[nome = valor]
+loop var[funcao]: X and [acao]
+if[condição] / elseif[condição] / else
+return valor
+break
+continue
+  </pre>
+
+  <h3>Entrada / Output</h3>
+  <pre>
+input
+print("texto" variavel "texto")
+ct.Console[/table(value:x)]
+ct.Console[/array(value:x)]
+ct.Console[/string(value:x)]
+  </pre>
+
+  <h3>Arrays e Strings</h3>
+  <pre>
+table = ["valor1","valor2"]
+table.append(valor)
+table.remove(index)
+table.length
+string.upper(var)
+string.lower(var)
+string.concat(var1,var2)
+random.number(min,max)
+random.array(array)
+random.color
+  </pre>
+
+  <h3>Funções</h3>
+  <pre>
+var function(print("texto")) = funcaoPrint
+call[funcaoPrint]
+return valor
+  </pre>
+
+  <h3>Operadores Matemáticos</h3>
+  <pre>
++ - * / % ^ 
+random.range(min,max)
+  </pre>
+
+  <h3>Comandos Avançados</h3>
+  <pre>
+wait(segundos)
+timer.start(nome,segundos)
+timer.stop(nome)
+loop.while[condição]
+  </pre>
+</section>
+
+<section id="tutorial" class="aba" style="display:none">
+  <h2>🎓 Super Tutorial Pluh++</h2>
+  <div class="accordion">
+    <button class="accordion-btn">1️⃣ Instalando Pluh++</button>
+    <div class="panel">
+      <pre>pip install pluhpp</pre>
+      <p>Use Pydroid 3 ou Replit para rodar no celular.</p>
+    </div>
+
+    <button class="accordion-btn">2️⃣ Criando Variáveis</button>
+    <div class="panel">
+      <pre>
+var x = 10
+var y = 20
+print("Valor de x:" x)
+      </pre>
+    </div>
+
+    <button class="accordion-btn">3️⃣ Loops e Condições</button>
+    <div class="panel">
+      <pre>
+loop var[print("Iterando")] : 5 and [print("OK")]
+if[x > 5]
+  print("X é maior que 5")
+else
+  print("X é menor ou igual a 5")
+      </pre>
+    </div>
+
+    <button class="accordion-btn">4️⃣ Funções</button>
+    <div class="panel">
+      <pre>
+var function(print("Olá Mundo")) = funcaoHello
+call[funcaoHello]
+      </pre>
+    </div>
+
+    <button class="accordion-btn">5️⃣ Comandos Avançados</button>
+    <div class="panel">
+      <pre>
+wait(2)
+timer.start("cronometro",10)
+loop.while[x < 10]
+  print(x)
+      </pre>
+    </div>
+  </div>
+
+  <p style="margin-top:20px;">📥 Para o **Mega Tutorial completo**, clique <a href="http://localhost:8158/__unsaved_file__" target="_blank">aqui</a> para abrir a extensão externa.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>Feito por Kalleb com ❤️</p>
+</footer>
+
+<script>
+function abrirAba(nome) {
+  document.querySelectorAll('.aba').forEach(a => a.style.display='none');
+  document.getElementById(nome).style.display='block';
+}
+
+document.querySelectorAll(".accordion-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const panel = btn.nextElementSibling;
+    panel.style.display = (panel.style.display === "block") ? "none" : "block";
+  });
+});
+
+console.log("Pluh++ site rodando mangos mangos 🚀");
+</script>
+
+</body>
+</html>
